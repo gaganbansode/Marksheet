@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MARKSHEET OF STUDENT</title>
+	<link rel="stylesheet" type="text/css" href="marksheet.css"> 
+  <script>
+    function add()
+    {
+      var st1=document.getElementById('st1').value;
+      var st2=document.getElementById('st2').value;
+      var st3=document.getElementById('st_g').value;
+      var total_st= parseInt(st1)+parseInt(st2)+parseInt(st3);
+      document.getElementById('st_total').value=total_st;
+      var grade1=document.getElementById('st_total').value;
+      if(grade1<=34)
+      {
+        document.getElementById('grd1').value='F';
+      }
+      else if(grade1<=45)
+      {
+        document.getElementById('grd1').value='D';
+      }
+     else if(grade1<=55)
+     {
+       document.getElementById('grd1').value='C';
+     }
+      else if(grade1<=65)
+     {
+       document.getElementById('grd1').value='B';
+     }
+      else if(grade1<=100)
+     {
+       document.getElementById('grd1').value='A';
+     }
+      var is1=document.getElementById('is1').value;
+      var is2=document.getElementById('is2').value;
+      var is3=document.getElementById('is_g').value;
+      var total_is= parseInt(is1)+parseInt(is2)+parseInt(is3);
+      document.getElementById('is_total').value=total_is;
+       var grade2=document.getElementById('is_total').value;
+      if(grade2<=34)
+      {
+        document.getElementById('grd2').value='F';
+      }
+      else if(grade2<=45)
+      {
+        document.getElementById('grd2').value='D';
+      }
+     else if(grade2<=55)
+     {
+       document.getElementById('grd2').value='C';
+     }
+      else if(grade2<=65)
+     {
+       document.getElementById('grd2').value='B';
+     }
+      else if(grade2<=100)
+     {
+       document.getElementById('grad').value='A';
+     }
+
+      var ad1=document.getElementById('ad1').value;
+      var ad2=document.getElementById('ad2').value;
+      var ad3=document.getElementById('ad_g').value;
+      var total_ad= parseInt(ad1)+parseInt(ad2)+parseInt(ad3);
+      document.getElementById('ad_total').value=total_ad;
+       var grade3=document.getElementById('ad_total').value;
+      if(grade3<35)
+      {
+        document.getElementById('grd3').value='F';
+      }
+      else if(grade3<=45)
+      {
+        document.getElementById('grd3').value='D';
+      }
+     else if(grade3<=55)
+     {
+       document.getElementById('grd3').value='C';
+     }
+      else if(grade3<=65)
+     {
+       document.getElementById('grd3').value='B';
+     }
+      else if(grade3<=100)
+     {
+       document.getElementById('grd3').value='A';
+     }
+
+      var dos1=document.getElementById('dos1').value;
+      var dos2=document.getElementById('dos2').value;
+      var dos3=document.getElementById('dos_g').value;
+      var total_dos= parseInt(dos1)+parseInt(dos2)+parseInt(dos3);
+      document.getElementById('dos_total').value=total_dos;
+       var grade4=document.getElementById('dos_total').value;
+      if(grade4<35)
+      {
+        document.getElementById('grd4').value='F';
+      }
+      else if(grade4<=45)
+      {
+        document.getElementById('grd4').value='D';
+      }
+     else if(grade4<=55)
+     {
+       document.getElementById('grd4').value='C';
+     }
+      else if(grade4<=65)
+     {
+       document.getElementById('grd4').value='B';
+     }
+      else if(grade4<=100)
+     {
+       document.getElementById('grd4').value='A';
+     }
+
+      var np1=document.getElementById('np1').value;
+      var np2=document.getElementById('np2').value;
+      var np3=document.getElementById('np_g').value;
+      var total_np= parseInt(np1)+parseInt(np2)+parseInt(np3);
+      document.getElementById('np_total').value=total_np;
+       var grade5=document.getElementById('np_total').value;
+      if(grade5<35)
+      {
+        document.getElementById('grd5').value='F';
+      }
+      else if(grade5<=45)
+      {
+        document.getElementById('grd5').value='D';
+      }
+     else if(grade5<=55)
+     {
+       document.getElementById('grd5').value='C';
+     }
+      else if(grade5<=65)
+     {
+       document.getElementById('grd5').value='B';
+     }
+      else if(grade5<=100)
+     {
+       document.getElementById('grd5').value='A';
+     }
+
+      var total= parseInt(total_np)+parseInt(total_is)+parseInt(total_dos)+parseInt(total_ad)+parseInt(total_st);
+      document.getElementById('total').value=total;
+      var per=total/500*100;
+      document.getElementById('persentage').value=per;
+      
+      
+
+    }
+  </script>
+</head>
+<body bgcolor="#cce0ff" style="border:2px dashed #fff">
+    <div class="header">
+    	<div class="logo"></div>
+    	<div class="cname">DR.BABASAHEB AMBEDKAR TECHNOLOGICAL UNIVERSITY</div>
+    	<div class="logo"></div>
+    </div>
+    <div>
+    	<h2 align="center">INFORMATION TECHNOLOGY DEPARTMENT</h2>
+    	<h4 align="center">Lonere Tal:Mangoan Dist:Raigad Zip Code:401 103</h4>
+    	<h2 align="center">Student Marksheet</h2>
+    	<h4 style="margin-left:8px;">Manth&Year:</h4>
+    	<h4 style="margin-left:1200px; line-height:1px;" >SEM:</h4>
+    </div>
+    <table border="2px">
+      <tr>
+        <th class="student">Name Of Student</th>
+        <th class="roll">Roll Number</th>
+        <th class="roll">Reg.Number</th>
+       
+      </tr>
+      <tr>
+        <td style="background: #cce0ff;"><input type="text" name="sname" class="student" ></td>
+        <td ><input type="number" name="rnumber" class="roll"></td>
+        <td ><input type="number" name="number" class="roll"></td>
+       
+      </tr>
+    </table>
+    <table border="2px" align="center">
+    	<tr>
+    	  <th class="same"> Subject.no</th>
+    	  <th class="subject"> Subject</th>
+    	  <th class="same1"> Credit</th>
+    	  <th class="same"> Internal</th>
+    	  <th class="same"> External</th>
+          <th class="same1"> Grace</th>
+          <th class="same"> Total</th>
+          <th class="same"> Grade</th>
+    	</tr>
+        <tr>
+    	  <td class="same">01 </td>
+    	  <td class="subject">ST </td>
+    	  <td class="same1"> 4 </td>
+    	  <td class="same"><input type="number" name="internal" id="st1" class="same2" >/75 </td>
+    	  <td class="same"><input type="number" name="external" id="st2" class="same2" >/25 </td>
+          <td class="same1"><input type="number" name="grace" id="st_g" class="same1"  onblur="add();"> </td>
+          <td ><input type="number" name="total" id="st_total" class="same"  > </td>
+          <td > <input type="text" name="grade" id="grd1" class="same"></td>
+    	</tr>
+        <tr>
+    	  <td class="same">02</td>
+    	  <td class="subject">IS </td>
+    	  <td class="same1"> 4 </td>
+    	  <td class="same"><input type="number" name="internal" id="is1" class="same2">/75 </td>
+    	  <td class="same"><input type="number" name="external" id="is2" class="same2">/25 </td>
+          <td class="same1"><input type="number" name="grace" id="is_g" class="same1" onblur="add();"> </td>
+          <td ><input type="number" name="total" id="is_total" class="same" > </td>
+          <td > <input type="text" name="grade" id="grd2" class="same"></td>
+    	</tr>
+        <tr>
+    	  <td class="same">03</td>
+    	  <td class="subject">ADBT </td>
+    	  <td class="same1"> 4 </td>
+    	  <td class="same"><input type="number" name="internal" id="ad1" class="same2">/75 </td>
+    	  <td class="same"><input type="number" name="external" id="ad2" class="same2">/25 </td>
+          <td class="same1"><input type="number" name="grace" id="ad_g" class="same1" onblur="add();"> </td>
+          <td ><input type="number" name="total" id="ad_total" class="same"> </td>
+          <td > <input type="text" name="grade" id="grd3" class="same"></td>
+    	</tr>
+    	 <tr>
+    	  <td class="same">04</td>
+    	  <td class="subject">DOS </td>
+    	  <td class="same1"> 4 </td>
+    	  <td class="same"><input type="number" name="internal" id="dos1" class="same2">/75 </td>
+    	  <td class="same"><input type="number" name="external" id="dos2" class="same2">/25 </td>
+          <td class="same1"><input type="number" name="grace" id="dos_g" class="same1" onblur="add();"> </td>
+          <td ><input type="number" name="total" id="dos_total" class="same"> </td>
+          <td > <input type="text" name="grade" id="grd4"class="same"></td>
+    	</tr>
+    	 <tr>
+    	  <td class="same">05</td>
+    	  <td class="subject">NPL</td>
+    	  <td class="same1"> 4 </td>
+    	  <td class="same"><input type="number" name="internal" id="np1" class="same2">/75 </td>
+    	  <td class="same"><input type="number" name="external" id="np2" class="same2">/25 </td>
+        <td class="same1"><input type="number" name="grace" id="np_g" class="same1" onblur="add();"> </td>
+        <td ><input type="number" name="total" id="np_total" class="same"> </td>
+        <td > <input type="text" name="grade" id="grd5" class="same"></td>
+    	</tr>
+
+    </table >
+    <table >
+      <tr>
+        <th><span style="font-size: 20px;">Total Marks:</span><input type="number" name="alltotal" id="total" class="roll" style="margin-top: 10px; " ><th>
+        <span style="margin-left: 30px">
+        <th><span style="font-size: 20px;">Persentage:</span><input type="number" name="persentage" id="persentage"class="roll" style="margin-top: 10px; ">%</th></span>
+      </tr>
+    </table>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+    <table >
+      <tr>
+        <th><span style="font-size: 20px; margin-left: 10px">PRINCIPLE</span></th>
+        <th><span style="font-size: 20px; margin-left: 900px">COLLEGE SEAL</span></th></span>
+      </tr>
+    </table>
+    </pre>
+    <input type="submit" name="submit" value="RESULT" onclick="add();">
+</body>
+</html>
